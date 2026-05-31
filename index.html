@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronPulse GYM - Push Your Limits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-text">IRON<span>PULSE</span></div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">IRON<span>PULSE</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active-link">Home</a></li>
+            <li><a href="#programs" class="nav-item">Programs</a></li>
+            <li><a href="#plans" class="nav-item">Plans</a></li>
+            <li><a href="#contact" class="nav-item">Location</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero-section target-section">
+        <div class="hero-content hero-fade">
+            <span class="tagline">NO PAIN, NO GAIN</span>
+            <h1>SHAPE YOUR <br><span class="highlight">PERFECT BODY</span></h1>
+            <p>Certified trainers, premium equipment, and a community that pushes you to be your absolute best.</p>
+            <button class="btn-cta" onclick="scrollToJoin()">START TRAINING NOW</button>
+        </div>
+    </header>
+
+    <section id="programs" class="programs-section target-section">
+        <h2 class="section-title reveal">OUR GYM PROGRAMS</h2>
+        <div class="grid-container">
+            <div class="program-card reveal">
+                <div class="card-icon">🏋️‍♂️</div>
+                <h3>Weight Lifting</h3>
+                <p>Build pure strength and definition with our elite powerlifting gear.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="card-icon">🏃‍♂️</div>
+                <h3>Cardio Burn</h3>
+                <p>High-intensity stamina sessions designed to torch fat instantly.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="card-icon">🧘‍♂️</div>
+                <h3>Flexibility & Yoga</h3>
+                <p>Recover faster, improve core mobility, and balance your mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans-section target-section">
+        <h2 class="section-title reveal">CHOOSE YOUR MEMBERSHIP</h2>
+        <div class="grid-container plans-container">
+            
+            <div class="plan-card reveal">
+                <span class="plan-badge">BASIC MONTHLY</span>
+                <div class="plan-price">₹1,500<span>/month</span></div>
+                <ul class="plan-features">
+                    <li>Access to Gym Floor</li>
+                    <li>Locker & Shower Room</li>
+                    <li>1 Free Trainer Consultation</li>
+                </ul>
+                <button class="plan-btn" onclick="joinPack('Basic Plan', '₹1,500')">Select Plan</button>
+            </div>
+
+            <div class="plan-card featured-card reveal">
+                <span class="plan-badge hot">MOST POPULAR</span>
+                <div class="plan-price">₹3,500<span>/3 months</span></div>
+                <ul class="plan-features">
+                    <li>24/7 Gym Access</li>
+                    <li>All Group Classes Included</li>
+                    <li>Personalized Diet Plan</li>
+                    <li>Dedicated Personal Trainer</li>
+                </ul>
+                <button class="plan-btn" onclick="joinPack('Premium 3-Month Plan', '₹3,500')">Select Plan</button>
+            </div>
+
+            <div class="plan-card reveal">
+                <span class="plan-badge">ANNUAL PRO</span>
+                <div class="plan-price">₹11,000<span>/year</span></div>
+                <ul class="plan-features">
+                    <li>Elite Full Year Access</li>
+                    <li>Free Gym Apparel/Kit</li>
+                    <li>Bi-weekly Body Composition Analysis</li>
+                    <li>All Premium Perks Included</li>
+                </ul>
+                <button class="plan-btn" onclick="joinPack('Annual Pro Plan', '₹11,000')">Select Plan</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section target-section">
+    <h2 class="section-title reveal">FIND US HERE</h2>
+    <div class="contact-container">
+        <div class="contact-info reveal">
+            <h3>IronPulse Headquarters</h3>
+            <p>💪 Drop by for a free session or hit us up on WhatsApp to secure a slot!</p>
+            <p style="margin-top: 20px;">📍 456, Power Gym Lane, Fitness District, Delhi/NCR</p>
+            <p>📞 +91 98765 99999</p>
+            <p>✉️ info@ironpulse.com</p>
+        </div>
+        
+        <div class="map-container reveal">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14677.906294436176!2d83.17836573955076!3d23.116249299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3989a33f9c8955e1%3A0x86edf27cc117bfd1!2sFit24Fitness!5e0!3m2!1sen!2sin!4v1780237934371!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <footer class="site-footer">
+        <p>© 2026 IronPulse Gym. Destroy Excuses Everyday.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
